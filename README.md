@@ -1,5 +1,4 @@
 # Website Performance Optimization Project
----
 
 This project was optimize a website and it's linked sites to render under 60FPS and score over 90 on Google's Page Speed Insights. This project was designed as part of the Frontend Web Development Nanodegree and part of a final project for the course: [Website Performance Optimization](https://www.udacity.com/course/website-performance-optimization--ud884)
 
@@ -46,9 +45,7 @@ Changes had to made to be made to several files to obtain the parameters of the 
 - Inling of CSS properties to speed page loads
 - Moved style and link tags associated with CSS and JS to bottom of body in HTML to reduce reder blocking
 - JS files were changed to load asynchronusly
-- Modified main.js to fix forced sychronus layout issues on lines
-        - *main.js* line 549 asdkjbsadhsaoifjknsdf
-        - *main.js* line 463 lkjasdlfkhasdkjhfkjhsdf
+- Modified main.js to fix forced sychronus layout issues on lines lkasdlkjsjsdflkjsadjbnsvjhsdkjhfd
 
 
 #### Resources used to complete this project ####
