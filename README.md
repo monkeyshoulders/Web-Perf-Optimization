@@ -46,12 +46,11 @@ Changes had to made to be made to several files to obtain the parameters of the 
 - Inlining of CSS properties to speed page loads
 - Moved style and link tags associated with CSS and JS to bottom of body in HTML to reduce render blocking
 - JS files were changed to load asynchronusly
-- Modified main.js to fix forced sychronus layout issues on lines
-        - *main.js* Line 402 changeSliderLabel moved out of resizePizzas function
-        - *main.js* Line 419 sizeSwitcher moved out of resizePizzas function
-        - *main.js* querySelectorAll changed to querySelector, getElementsByClassName, and getElementById
-        - *main.js* Line 529 for loop change from 200 to 25 to reduce amount of render and paint
-        - *main.js* Line 508 /1250 changed to /500 to assist rendering and scrolling 
+- *main.js* Line 402 changeSliderLabel moved out of resizePizzas function
+- *main.js* Line 419 sizeSwitcher moved out of resizePizzas function
+- *main.js* querySelectorAll changed to querySelector, getElementsByClassName, and getElementById
+- *main.js* Line 529 for loop change from 200 to 25 to reduce amount of render and paint
+- *main.js* Line 508 /1250 changed to /500 to assist rendering and scrolling 
 
 #### Resources used to complete this project ####
 
