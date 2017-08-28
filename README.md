@@ -1,4 +1,5 @@
 # Website Performance Optimization Project
+---
 
 This project was optimize a website and it's linked sites to render under 60FPS and score over 90 on Google's Page Speed Insights. This project was designed as part of the Frontend Web Development Nanodegree and part of a final project for the course: [Website Performance Optimization](https://www.udacity.com/course/website-performance-optimization--ud884)
 
@@ -42,11 +43,15 @@ Changes had to made to be made to several files to obtain the parameters of the 
 - All images were compressed using Compressjpeg.com
 - All CSS, JS, and HTML files were minified
 - Files were copied into **DIST** and **SRC** folders for future modification purposes and web serving for optimal performance
-- Inling of CSS properties to speed page loads
-- Moved style and link tags associated with CSS and JS to bottom of body in HTML to reduce reder blocking
+- Inlining of CSS properties to speed page loads
+- Moved style and link tags associated with CSS and JS to bottom of body in HTML to reduce render blocking
 - JS files were changed to load asynchronusly
-- Modified main.js to fix forced sychronus layout issues on lines lkasdlkjsjsdflkjsadjbnsvjhsdkjhfd
-
+- Modified main.js to fix forced sychronus layout issues on lines
+        - *main.js* Line 402 changeSliderLabel moved out of resizePizzas function
+        - *main.js* Line 419 sizeSwitcher moved out of resizePizzas function
+        - *main.js* querySelectorAll changed to querySelector, getElementsByClassName, and getElementById
+        - *main.js* Line 529 for loop change from 200 to 25 to reduce amount of render and paint
+        - *main.js* Line 508 /1250 changed to /500 to assist rendering and scrolling 
 
 #### Resources used to complete this project ####
 
