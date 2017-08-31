@@ -422,7 +422,7 @@ var resizePizzas = function(size) {
   function changePizzaSizes(size) {
     var pizzaElements = document.getElementsByClassName("randomPizzaContainer");
     var length = pizzaElements.length;
-    var newWidth
+    var newWidth;
     switch(size) {
       case "1":
         newWidth = 25;
