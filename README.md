@@ -42,17 +42,16 @@ Changes had to made to be made to several files to obtain the parameters of the 
 
 - All images were compressed and resized
 - All CSS, JS, and HTML files were minified
-- CSS file for index.html was completely edited and inlined except for a few lines in the header
+- CSS file for index.html and project.html files were completely edited and inlined except for a few lines in the header
 - Files were copied into **SRC** folder for original editable formats
-- Moved style and link tags associated with CSS and JS to bottom of body in HTML to reduce render blocking
-- JS files were changed to load asynchronusly
+- Moved script and link tags associated with CSS and JS to bottom of body in HTML to reduce render blocking
+- JS files were changed to load asynchronously
 - *main.js* querySelectorAll changed to querySelector, getElementsByClassName, and getElementById
-- *main.js* Line 529 for loop change from 200 to 55 to reduce amount of render and paint
--
+- *main.js* see lines 431, 432, 439, 441, 458, 493, and 514 for changes comments
 
 #### Resources used to complete this project ####
 
-Along with the the course material provided by Udacity in the Website Performance Optimization course and the webcast associated with it, I also used the following articles and sites:
+Along with the the course material provided by Udacity in the Website Performance Optimization course/webcasts and with 1:1 mentor appointments, I also used the following articles and sites:
 
 - https://developers.google.com/speed/docs/insights/rules
 - dillenger.io a tool for writing markdown
