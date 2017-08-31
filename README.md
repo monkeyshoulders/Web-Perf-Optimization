@@ -47,7 +47,7 @@ Changes had to made to be made to several files to obtain the parameters of the 
 - Moved script and link tags associated with CSS and JS to bottom of body in HTML to reduce render blocking
 - JS files were changed to load asynchronously
 - *main.js* querySelectorAll changed to querySelector, getElementsByClassName, and getElementById
-- *main.js* see lines 431, 432, 439, 441, 458, 493, and 514 for changes comments
+- *main.js* see lines 431, 432, 439, 441, 458, 459, 490, 493, and 514 for changes comments
 
 #### Resources used to complete this project ####
 
