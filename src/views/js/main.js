@@ -455,8 +455,8 @@ var resizePizzas = function(size) {
 window.performance.mark("mark_start_generating"); // collect timing data
 
 // This for-loop actually creates and appends all of the pizzas when the page loads
-for (var i = 2; i < 25; i++) { //changed 100 to 25 for less looping
-  var pizzasDiv = document.getElementById("randomPizzas");
+var pizzasDiv = document.getElementById("randomPizzas"); //moved outside of loop
+for (var i = 2; i < 24; i++) { //changed 100 to 24 for less looping
   pizzasDiv.appendChild(pizzaElementGenerator(i));
 }
 
@@ -487,10 +487,10 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
-
+  var scrollCalc =  document.body.scrollTop / 1250; //moved calculation outside for-loop
   var items = document.getElementsByClassName('mover');
   for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin((document.body.scrollTop / 800) + (i % 5)); //changed 1250 to 800 because it looks better
+    var phase = Math.sin(scrollCalc + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
@@ -511,7 +511,7 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 60; i++) { // decreased the number of pizza's appended to the screen to only visible ones
+  for (var i = 0; i < 64; i++) { // decreased the number of pizza's appended to the screen to only visible ones
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
