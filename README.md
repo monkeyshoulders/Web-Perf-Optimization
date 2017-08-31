@@ -17,7 +17,7 @@ https://monkeyshoulders.github.io/frontend-nanodegree-mobile-portfolio-master/
 
 ##### To evaluate pages Speed Score using [Ngrok:](https://ngrok.com/)
 - Navigate to Ngrok.com and download the version for your operating system and follow the download instructions and the instructions for setting up a secure tunnel
-- Open a window in your Terminal orcommand line tool for your computer & navigate to the folder where this project was saved
+- Open a window in your Terminal or command line tool for your computer & navigate to the folder where this project was saved
 - Type in your terminal window
 ```
 $ python -m SimpleHTTPServer 8080
@@ -40,17 +40,15 @@ https://123a45b6c.ngrok.io
 
 Changes had to made to be made to several files to obtain the parameters of the projects outline.
 
-- All images were compressed using Compressjpeg.com
+- All images were compressed and resized
 - All CSS, JS, and HTML files were minified
-- Files were copied into **DIST** and **SRC** folders for future modification purposes and web serving for optimal performance
-- Inlining of CSS properties to speed page loads
+- CSS file for index.html was completely edited and inlined except for a few lines in the header
+- Files were copied into **SRC** folder for original editable formats
 - Moved style and link tags associated with CSS and JS to bottom of body in HTML to reduce render blocking
 - JS files were changed to load asynchronusly
-- *main.js* Line 402 changeSliderLabel moved out of resizePizzas function
-- *main.js* Line 419 sizeSwitcher moved out of resizePizzas function
 - *main.js* querySelectorAll changed to querySelector, getElementsByClassName, and getElementById
-- *main.js* Line 529 for loop change from 200 to 25 to reduce amount of render and paint
-- *main.js* Line 508 /1250 changed to /500 to assist rendering and scrolling 
+- *main.js* Line 529 for loop change from 200 to 55 to reduce amount of render and paint
+-
 
 #### Resources used to complete this project ####
 
@@ -61,6 +59,7 @@ Along with the the course material provided by Udacity in the Website Performanc
 - https://ngrok.com/
 - http://compressjpeg.com/ JPEG compression
 - https://www.youtube.com/watch?v=oy13mDsXC4s Ngrok tutorial
-- https://www.youtube.com/watch?v=pNKnhBIVj4w Getting your pagespeed up - Google
+- https://www.youtube.com/watch?v=pNKnhBIVj4w Getting your page speed up - Google
 - http://www.minifier.org/ Minify JS and CSS files
 - http://minifycode.com/html-minifier/ HTML minifier
+- https://developer.mozilla.org/en-US/docs/Web/CSS/will-change
